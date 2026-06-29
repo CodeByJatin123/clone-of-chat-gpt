@@ -8,9 +8,9 @@
 }
 
 body{
-    background:black;
-    overflow-x:hidden;
-    overflow-y:auto;
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .main{
@@ -34,12 +34,11 @@ body{
 /* ---------------- Main Content ---------------- */
 
 .main-content{
-    flex:1;
-    background:black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: black;
+    padding: 20px;
 }
 
 .main-content::-webkit-scrollbar{
@@ -189,9 +188,10 @@ body{
     font-size: 27px;
 }
 .prompt{
-    text-align:center;
-    margin-top:165px;
-    font-size:39px;
+    text-align: center;
+     margin-top: 165px;
+     font-size:  39px;
+     
 }
 .search-box{
      width: 100%;
