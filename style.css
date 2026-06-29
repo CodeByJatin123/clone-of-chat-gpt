@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+/* ---------------- Sidebar ---------------- */
+
+.sidebar{
+    width: 21rem;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #2a2a2a;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------- Main Content ---------------- */
+
+.main-content{
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: black;
+    padding: 20px;
+}
+
+.main-content::-webkit-scrollbar{
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb{
+    background: #444;
+    border-radius: 10px;
+}
+
+/* ---------------- Sticky Nav ---------------- */
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: black;
+}
+
+.image{
+    width: 15rem;
+}
+
+.pair{
+    display: flex;
+    gap: 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ---------------- Menu ---------------- */
+
+.menu{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.items:hover{
+    background: rgb(37,36,36);
+}
+
+.items i,
+.items span{
+    background: transparent;
+}
+
+/* ---------------- Center ---------------- */
+
+.center{
+    margin: 20px;
+    line-height: 2.8rem;
+}
+
+.pinned{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chat-name{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.chat-name:hover{
+    background: rgb(37,36,36);
+}
+
+.chat-name i,
+.chat-name span{
+    background: transparent;
+}
+
+/* ---------------- Profile ---------------- */
+
+.profile{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #2a2a2a;
+    background: black;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+}
+
+.avatar{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #4A90E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.info,
+.info h4,
+.info p{
+    background: transparent;
+}
+
+.info p{
+    color: gray;
+    font-size: 14px;
+}
+.upper-part{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-left: 13px;
+}
+.logo i{
+    margin-left:9px;
+}
+.cloud{
+    font-size: 27px;
+}
+.prompt{
+    text-align: center;
+     margin-top: 165px;
+     font-size:  39px;
+     
+}
+.search-box{
+     width: 100%;
+    max-width: 900px;
+    height: 64px;
+    background: #2d2d2d;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;
+    margin: 30px auto;
+}
+
+.search-box input{
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+    font-size: 22px;
+    margin: 0 18px;
+}
+
+.search-box input::placeholder{
+    color: #b7b7b7;
+}
+
+.plus{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.right-icons{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.mic{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.voice-btn{
+    color: black;
+    background: transparent;
+    width: 46px;
+    height: 46px;
+
+    border: none;
+    border-radius: 50%;
+
+    /* background: white; */
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.voice-btn:hover{
+    transform: scale(1.05);
+}
+.list{
+    background-color: blue;
+}
+button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer
+}
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.badge{
+    margin: 0;
+}
+
+.first{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+    padding: 10px 18px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.first:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.first i{
+    font-size: 15px;
+}
+/* ===========================
+        Mobile Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+        overflow-y:auto;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    .main{
+        display:block;
+    }
+
+    .main-content{
+        width:100%;
+        height:100vh;
+        padding:20px 16px;
+    }
+
+    .content{
+        width:100%;
+        max-width:420px;
+        margin:auto;
+    }
+
+    .upper-part{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top:10px;
+    }
+
+    .logo{
+        padding-left:0;
+    }
+
+    .logo h2{
+        font-size:28px;
+    }
+
+    .cloud{
+        font-size:28px;
+    }
+
+    .prompt{
+        font-size:2.2rem;
+        line-height:1.3;
+        margin-top:110px;
+        margin-bottom:35px;
+        text-align:left;
+    }
+
+    .search-box{
+        width:100%;
+        height:58px;
+        border-radius:30px;
+        margin:0 auto;
+        padding:0 12px;
+    }
+
+    .search-box input{
+        font-size:16px;
+        margin:0 10px;
+    }
+
+    .voice-btn{
+        width:38px;
+        height:38px;
+        font-size:16px;
+    }
+
+    .right-icons{
+        gap:5px;
+    }
+
+    .badges{
+        margin-top:18px;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .badge{
+        width:100%;
+    }
+
+    .first{
+        width:100%;
+        height:46px;
+        border-radius:24px;
+        justify-content:flex-start;
+        padding:0 16px;
+        font-size:15px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .main-content{
+        padding:18px 14px;
+    }
+
+    .content{
+        max-width:100%;
+    }
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    .cloud{
+        font-size:24px;
+    }
+
+    .prompt{
+        font-size:2rem;
+        margin-top:90px;
+    }
+
+    .search-box{
+        height:56px;
+    }
+
+    .search-box input{
+        font-size:15px;
+    }
+
+    .voice-btn{
+        width:36px;
+        height:36px;
+    }
+
+}
